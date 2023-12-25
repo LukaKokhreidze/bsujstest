@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Products</title>
+</head>
+<body>
+
+    <header>
+        <h1>Explore Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productList">
+            <h2>All Products</h2>
+            <div id="filterForm">
+                <label for="sort">Sort By:</label>
+                <select id="sort" onchange="sortProducts()">
+                    <option value="name">Name</option>
+                    <option value="price">Price</option>
+                </select>
+            </div>
+
+            <ul id="products">
+                <!-- Product items go here -->
+                <li data-name="Product A" data-price="20.00">Product A - $20.00</li>
+                <li data-name="Product B" data-price="15.00">Product B - $15.00</li>
+                <li data-name="Product C" data-price="30.00">Product C - $30.00</li>
+                <!-- Add more products as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Market</p>
+    </footer>
+
+    <button id="toggleButton" onclick="toggleStyle()">DARK MODE</button>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
